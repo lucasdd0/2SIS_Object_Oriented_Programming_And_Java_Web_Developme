@@ -1,3 +1,5 @@
+package BilheteUnico;
+
 import java.text.DecimalFormat;
 
 import static javax.swing.JOptionPane.*;

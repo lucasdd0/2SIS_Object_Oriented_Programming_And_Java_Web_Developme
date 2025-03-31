@@ -1,3 +1,5 @@
+package BilheteUnico;
+
 import java.util.Random;
 
 public class BilheteUnico {

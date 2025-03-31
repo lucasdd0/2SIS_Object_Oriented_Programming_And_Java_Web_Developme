@@ -1,3 +1,5 @@
+package BilheteUnico;
+
 public class Usuario {
     String nome;
     long cpf;
