@@ -4,13 +4,13 @@ public class Fornecedor {
     private String nome;
     private long cnpj;
 
-    public Fornecedor(String nome, long cnpj){
+    public Fornecedor(String nome, long cnpj) {
         this.nome = nome;
         this.cnpj = cnpj;
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
