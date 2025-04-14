@@ -13,17 +13,17 @@ public class Retangulo {
     }
 
     public double getArea(){
-        return base * altura;
+        return altura * base;
     }
 
     public double getPerimetro(){
         return 2 * (base + altura);
     }
 
-    public void mostrarDados(){
-        System.out.println("Base: " + base);
+    public void imprimindoRomeo(){
         System.out.println("Altura: " + altura);
-        System.out.println("Área: " + getArea());
-        System.out.println("Perímetro: " + getPerimetro());
+        System.out.println("Base: " + base);
+        System.out.println("Area: " + getArea());
+        System.out.println("Perimetro: " + getPerimetro());
     }
 }
