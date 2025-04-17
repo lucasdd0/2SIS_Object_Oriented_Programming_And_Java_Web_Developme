@@ -7,7 +7,7 @@ import static java.lang.Double.parseDouble;
 
 public class Util {
 
-    private Controle controle = new Controle();
+    private final Controle controle = new Controle();
 
     public void menu(){
         String aux = "1. Cadastrar Bucetinha\n2. Pesquisar Bucetinha\n3. Listar\n4. Finalizar Bucetinha º^_^°";
@@ -34,9 +34,17 @@ public class Util {
     }
 
     private void listarBucetinhas() {
+        showMessageDialog(null, controle.listar());
     }
 
     private void pesquisarBucetinhas() {
+        long matricula = parseLong(showMessageDialog("Matricula"));
+        Empregado empregado = controle.pesquisar(matricula);
+    }
+    if(empregado == null){
+        showMessageDialog(null, "Empregado não encontrado");
+    }else{
+        showMessageDialog(null, empregado);
     }
 
     private void cadastrarBucetinha() {
@@ -47,6 +55,7 @@ public class Util {
         double totalDeFudidas, comissao;
         String aux = "1. Empregada Horalista\n2. Empregada comissionada\n3. Sair das super bucetas gostosas e saborentas";
         int opcao;
+        Empregado empregado;
 
         while(true){
             opcao = parseInt(showInputDialog(aux));
@@ -59,7 +68,16 @@ public class Util {
                 if(opcao == 1){
                     totalDeHorasDandoABucetinha = parseInt(showMessageDialog("Total de horas dando a bucetinha apertada: "));
                     valorDaHoraDada = parseDouble(showMessageDialog("Valor da hora dando a bucetona: "));
+                    empregado = new EmpregadoHorista(matricula, donaBucetinha, totalDeHorasDandoABucetinha, valorDaHoraDada);
+                    controle.inserir(empregado);
+                }else if(opcao == 2){
+                    totalDeFudidas = parseDouble(showMessageDialog("Total de fodidinhas"));
+                    comissao = parseDouble(showMessageDialog("Porcentagem de comissão"));
+                    empregado = new EmpregadoComissionado(matricula, donaBucetinha, totalDeFudidas, comissao);
+                    controle.inserir(empregado);
                 }
+            }else{
+                showMessageDialog(null, "Opção inválida");
             }
         }
     }
