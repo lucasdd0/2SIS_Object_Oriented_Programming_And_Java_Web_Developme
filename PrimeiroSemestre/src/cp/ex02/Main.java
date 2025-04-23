@@ -8,15 +8,15 @@ public class Main {
 
         Retangulo r = new Retangulo();
 
-        System.out.println("Digite a base: ");
-        double base = sc.nextDouble();
-        r.setBase(base);
+        System.out.println("Digite a base do retangulo ");
+        r.setBase(sc.nextDouble());
 
-        System.out.println("Digite a altura: ");
-        double altura = sc.nextDouble();
-        r.setAltura(altura);
+        System.out.println("Digite a altura do retangulo ");
+        r.setAltura(sc.nextDouble());
 
-        r.imprimindoRomeo();
+        System.out.println(r.calculaPerimetro());
+        System.out.println(r.caculaArea());
+
 
     }
 }

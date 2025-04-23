@@ -1,23 +1,25 @@
 package cp.ex01;
 
-import java.util.Scanner;
+public class Bicicleta{
+    private String cor;
+    private int numeroMarchas;
+    private double valor;
 
-public class Bicicleta {
-    String cor;
-    int numeroDeMarchas;
-    double valor;
-
-    public void usuarioInstancia(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Digite a cor:");
-        cor = sc.next();
-        System.out.println("Digite o numero de marchas: ");
-        numeroDeMarchas = sc.nextInt();
-        System.out.println("Digite o valor: ");
-        valor = sc.nextDouble();
+    public void setCor(String cor) {
+        this.cor = cor;
     }
 
-    public void retornaDados(){
-        System.out.println(cor + "\n" + numeroDeMarchas + "\n" + valor);
+    public void setNumeroMarchas(int numeroMarchas) {
+        this.numeroMarchas = numeroMarchas;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public void mostraDados(){
+        System.out.println("Cor: " + cor);
+        System.out.println("Marchas: " + numeroMarchas);
+        System.out.println("Valor: " + valor);
     }
 }
