@@ -21,4 +21,11 @@ public class Entrega {
         return distancia / 100;
     }
 
+    @Override
+    public String toString() {
+        return "Entrega{" +
+                "destino='" + destino + '\'' +
+                ", distancia=" + distancia +
+                '}';
+    }
 }

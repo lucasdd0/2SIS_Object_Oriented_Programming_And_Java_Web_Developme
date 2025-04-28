@@ -18,6 +18,8 @@ public class Main {
         }
 
         System.out.println(lista);
+        lista.remove(0);
+        System.out.println(lista);
 
     }
 }
