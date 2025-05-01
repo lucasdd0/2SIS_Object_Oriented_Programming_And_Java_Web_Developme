@@ -8,8 +8,8 @@ public class Main {
 
         ArrayList<Forma> lista = new ArrayList<>();
         lista.add(new Circulo(25, 25, 50.0));
-        lista.add(new Circulo(54, 65, 80.0));
         lista.add(new Cilindro(40, 75, 70.0, 60.0));
+        lista.add(new Circulo(54, 65, 80.0));
         lista.add(new Cilindro(20, 45, 43.0, 90.0));
 
         for(Forma f : lista){
@@ -24,6 +24,11 @@ public class Main {
             System.out.println(f.getClass());
             System.out.println(f);
             System.out.println("área = " + f.calcularArea());
+
+            if (f instanceof Cilindro){
+                System.out.println("Volume = " + ((Cilindro) f).calcularVolume());
+            }
+
             System.out.println("---------------------------");
         }
 
