@@ -1,6 +1,6 @@
 package CalculaCilindro;
 
-public class Cilindro extends Forma{
+public class Cilindro extends Forma implements Volume{
 
     private Double altura;
 
@@ -14,7 +14,7 @@ public class Cilindro extends Forma{
         return Math.PI * Math.pow(getRaio(), 2);
     }
 
-    public Double calcularVolume(){
+    public double calcularVolume(){
         return 0.0;
     }
 
