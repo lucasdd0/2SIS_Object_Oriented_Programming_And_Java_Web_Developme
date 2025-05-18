@@ -1,4 +1,4 @@
-package Empregador;
+package cp2.Heranca.ex01;
 
 public abstract class Empregado {
     long matricula;
@@ -11,8 +11,9 @@ public abstract class Empregado {
 
     public abstract double calcularSalario();
 
-    public String getDados() {
-        return "Nome: " + nome +
-                "\nMatricula: " + matricula;
+    @Override
+    public String toString() {
+        return "Matrícula: " + matricula + "\nNome: " + nome;
     }
+
 }
