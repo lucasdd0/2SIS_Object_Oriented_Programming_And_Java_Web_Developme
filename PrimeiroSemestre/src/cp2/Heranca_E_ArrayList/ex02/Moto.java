@@ -1,4 +1,4 @@
-package cp2.Heranca.ex02;
+package cp2.Heranca_E_ArrayList.ex02;
 
 public class Moto extends Veiculo{
 

@@ -1,4 +1,4 @@
-package cp2.Heranca.ex01;
+package cp2.Heranca_E_ArrayList.ex01;
 
 public class Main {
     public static void main(String[] args) {

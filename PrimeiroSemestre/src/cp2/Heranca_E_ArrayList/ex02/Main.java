@@ -1,6 +1,4 @@
-package cp2.Heranca.ex02;
-
-import cp2.Heranca.ex01.Empregado;
+package cp2.Heranca_E_ArrayList.ex02;
 
 import java.util.ArrayList;
 

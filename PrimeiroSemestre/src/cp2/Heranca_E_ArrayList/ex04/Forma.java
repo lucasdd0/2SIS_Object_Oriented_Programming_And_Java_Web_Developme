@@ -1,4 +1,4 @@
-package cp2.Heranca.ex04;
+package cp2.Heranca_E_ArrayList.ex04;
 
 public class Forma {
     private double cordenadaX;
